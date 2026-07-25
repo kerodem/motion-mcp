@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ozxmlscene>
+<ozml version="4.0">
+  <displayversion>5.5</displayversion>
+  <factory id="1" uuid="66fc0d6af6a911d6a7a7000393670732">
+    <description>Image</description>
+    <manufacturer>Apple</manufacturer>
+    <version>1</version>
+  </factory>
+  <factory id="2" uuid="aabbccddeeff00112233445566778899">
+    <description>Text</description>
+    <manufacturer>Apple</manufacturer>
+    <version>1</version>
+  </factory>
+  <scene>
+    <sceneSettings>
+      <width>1920</width>
+      <height>1080</height>
+      <duration>300</duration>
+      <frameRate>30</frameRate>
+      <bgColor>0 0 0 1</bgColor>
+    </sceneSettings>
+    <layer name="Project" id="10000">
+      <scenenode name="Title" id="10011" factoryID="2" version="4">
+        <parameter name="Transform" id="100" flags="4112">
+          <parameter name="Position" id="101" flags="4112">
+            <parameter name="X" id="1" flags="16" default="0" value="-166.08"/>
+            <parameter name="Y" id="2" flags="16" default="0" value="-83.97"/>
+          </parameter>
+          <parameter name="Scale" id="105" flags="4112">
+            <parameter name="X" id="1" flags="16" default="100">
+              <curve type="1" default="0" round="0" value="20">
+                <numberOfKeypoints>2</numberOfKeypoints>
+                <keypoint flags="32"><time>0</time><value>20</value></keypoint>
+                <keypoint flags="32"><time>30</time><value>100</value></keypoint>
+              </curve>
+            </parameter>
+          </parameter>
+        </parameter>
+        <parameter name="Text" id="200" flags="16" value="Hello Motion"/>
+      </scenenode>
+      <scenenode name="Background" id="10012" factoryID="1" version="4">
+        <parameter name="Opacity" id="201" flags="16" default="100" value="100"/>
+      </scenenode>
+    </layer>
+  </scene>
+</ozml>
