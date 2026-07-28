@@ -1,3 +1,5 @@
+**stdio!!!** 
+
 # motion-mcp
 
 An [MCP](https://modelcontextprotocol.io) server for **Apple Motion**. It lets an
